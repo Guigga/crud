@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inika";
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(0, 28, 48, 0.3), rgba(0, 28, 48, 0.3)), url(img/wallpaper-crud.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header{
+    background-color: var(--primary-color);
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-title{
+    color: black;
+    font-size: 2.5rem;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 5vh auto;
+    padding: 20px;
+    box-shadow: 2px 2px 10px var(--shadow-color);
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.cadastro{
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 280px;
+    height: 48px;
+    
+    background: #E7EEF1;
+    border: 1.2px solid #87A2CA;
+    border-radius: 3px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.h3{
+    width: 173px;
+    height: 34px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;   
+    color: #0D2553;
+}
+
+.thead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    
+    width: 842px;
+    height: 40px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+th{
+    /* box */
+    width: 182px;
+    height: 40px;
+    background: #067894;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+
+.records th{
+    width: 48px;
+    height: 29px; 
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;  
+    color: #FFFFFF;
+}
+
+.records td{
+    height: 50px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.records td:nth-child(5){
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    flex-direction: column;
+
+}
+
+
+.salvar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    background: #0CC054;
+    border-radius: 3px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    background: #0CC054;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:nth-child(2){
+    background: #FF2F2F;
+    border-radius: 3px;
+}
+
+
+footer{
+    width: 100;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    padding: 20px;
+}
